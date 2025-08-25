@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sriharsha Maddala — Portfolio</title>
+  <meta name="description" content="Sriharsha Maddala — product-focused engineer building consumer and platform products. Projects include HavenHOA, SmartFeedr (capstone), and Mood Lift." />
+  <meta property="og:title" content="Sriharsha Maddala — Portfolio" />
+  <meta property="og:description" content="Product-minded engineer. Projects: HavenHOA, SmartFeedr (capstone), Mood Lift." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'sans-serif'] },
+          boxShadow: {
+            soft: '0 1px 2px rgba(0,0,0,0.04), 0 4px 24px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Smooth scrolling */
+    html { scroll-behavior: smooth; }
+    /* Light/Dark toggling */
+    :root { color-scheme: light dark; }
+  </style>
+</head>
+<body class="font-sans bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 supports-[backdrop-filter]:dark:bg-slate-900/50 border-b border-slate-200/70 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="group inline-flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-sky-500 text-white shadow-soft">S</span>
+        <span class="font-semibold tracking-tight">Sriharsha Maddala</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-5 text-sm font-medium">
+        <a href="#projects" class="hover:text-sky-600">Projects</a>
+        <a href="#experience" class="hover:text-sky-600">Experience</a>
+        <a href="#contact" class="hover:text-sky-600">Contact</a>
+        <button id="themeBtn" class="ml-2 rounded-lg border px-2.5 py-1.5 text-xs hover:bg-slate-50 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700" aria-label="Toggle theme">Toggle</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="max-w-6xl mx-auto px-4 pt-10 pb-8 md:py-16">
+    <div class="grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-7">
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight">Product‑minded Engineer building practical, human‑centered products</h1>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-2xl">I design, ship, and iterate software with clear metrics. Recent work spans consumer apps, IoT, and enterprise platforms.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://github.com/smaddala011" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800">GitHub<span class="text-xs text-slate-500">/smaddala011</span></a>
+          <a href="https://www.linkedin.com/in/sriharshamaddala/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800">LinkedIn</a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-sky-600 text-white px-4 py-2 hover:bg-sky-700 shadow-soft">Contact</a>
+          <a href="./Sriharsha_Resume.pdf" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800">Download Resume</a>
+        </div>
+      </div>
+      <div class="md:col-span-5 space-y-5">
+        <!-- Replace me.jpg with your headshot file (place it in the same folder) -->
+        <img src="./me.jpg" alt="Sriharsha Maddala headshot" class="w-full rounded-2xl object-cover aspect-[4/5] border border-slate-200 dark:border-slate-800 shadow-soft" />
+        <div class="relative rounded-2xl border border-slate-200 dark:border-slate-800 p-5 bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-950 shadow-soft">
+          <h2 class="font-semibold text-slate-700 dark:text-slate-200">At a Glance</h2>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li>• B.S. Computer Engineering — UC Santa Cruz</li>
+            <li>• Technology Analyst @ Wells Fargo (SWE → product)</li>
+            <li>• Focus: Product strategy, APIs, AI features, mobile</li>
+            <li>• Strengths: user research, KPIs, execution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-10">
+    <div class="flex items-end justify-between">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Selected Projects</h2>
+      <a href="https://github.com/smaddala011" target="_blank" rel="noopener" class="text-sm text-sky-600 hover:underline">See more on GitHub →</a>
+    </div>
+
+    <!-- Featured: SmartFeedr Capstone -->
+    <article class="mt-6 grid md:grid-cols-12 gap-6 items-stretch">
+      <div class="md:col-span-7 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-2 py-0.5 text-xs rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300">Featured</span>
+          <span class="text-xs text-slate-500">IoT · Full‑stack · Capstone</span>
+        </div>
+        <h3 class="text-xl font-semibold">SmartFeedr — Automated Pet Feeder</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">IoT feeder with real‑time control, dual‑camera monitoring, and automated discard logic that reduced food waste by <strong>75%</strong>. Built with Python, Flask, Firebase, AWS, REST APIs.</p>
+        <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+          <li>Defined KPIs (uptime, adoption, waste reduction) and iterated after live demos.</li>
+          <li>Mobile‑first interface; validated usability with pet owners; travel‑friendly design.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href="https://csspp.engineering.ucsc.edu/capstone/smartfeedr-automatic-pet-feeder/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 px-3 py-1.5 hover:bg-slate-50 dark:hover:bg-slate-800">Capstone Page</a>
+        </div>
+      </div>
+      <div class="md:col-span-5 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-slate-50 dark:bg-slate-900/40 shadow-soft">
+        <h4 class="font-semibold">Highlights</h4>
+        <ul class="mt-3 text-sm space-y-2">
+          <li>• Real‑time REST control & telemetry</li>
+          <li>• Dual‑angle camera feeds</li>
+          <li>• Automated discard & hygiene features</li>
+          <li>• KPI‑driven iteration</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Grid of other projects -->
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <!-- HavenHOA -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <h3 class="text-lg font-semibold">HavenHOA — Community SaaS</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Mobile‑first platform for HOA communities: payments, announcements, documents, and governance.</p>
+        <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+          <li>Interviewed <strong>15+</strong> users; defined MVP and role‑based access.</li>
+          <li>Set adoption KPIs (sign‑ups, churn, admin engagement); drafted GTM via HOA boards.</li>
+          <li>Competitive analysis of 5+ tools → differentiated UX focus.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+          <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800">Flutter</span>
+          <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800">Firebase</span>
+          <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800">AI</span>
+        </div>
+      </article>
+
+      <!-- Mood Lift -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <h3 class="text-lg font-semibold">Mood Lift — AI‑powered Music & Journaling</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Recommends Spotify playlists by mood and generates personalized journaling prompts with OpenAI.</p>
+        <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+          <li>Ran interviews; iterated features; +20% re‑engagement via notifications + sequencing.</li>
+          <li>Built with React Native, Firebase auth/DB, Spotify & OpenAI APIs.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+          <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800">React Native</span>
+          <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800">Firebase</span>
+          <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800">Spotify API</span>
+        </div>
+      </article>
+
+      <!-- Microservices Portal -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <h3 class="text-lg font-semibold">Microservices Access Portal</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Internal portal consolidating 20+ microservices; reduced access time by 40% and cut redundant calls by 30% using GraphQL.</p>
+        <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+          <li>Coordinated with senior engineers; shipped across two releases.</li>
+          <li>Usage analytics informed feature prioritization.</li>
+        </ul>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+          <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800">GraphQL</span>
+          <span class="px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800">Node / Web</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Experience</h2>
+    <div class="mt-6 space-y-6">
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="text-lg font-semibold">Wells Fargo — Technology Analyst</h3>
+          <span class="text-sm text-slate-500">Jul 2024 – Present · San Francisco, CA</span>
+        </div>
+        <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+          
+          <li>Implemented Apigee; improved scalability and cut integration onboarding time by 30%.</li>
+          <li>Modernized Java/Spring Boot services; reduced incidents and improved stability for 10K+ daily users.</li>
+          <li>Mentor & community builder: selected 1 of 5 (of 180 analysts) to organize professional development events.</li>
+        </ul>
+      </article>
+
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="text-lg font-semibold">Wells Fargo — Technology Intern</h3>
+          <span class="text-sm text-slate-500">Jun 2023 – Aug 2023 · Fremont, CA</span>
+        </div>
+        <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+          <li>Shipped a portal aggregating 20+ microservices; reduced employee access time by 40%.</li>
+          <li>Introduced GraphQL; cut redundant calls by 30%; usage analytics drove prioritization.</li>
+          <li>Delivered 10+ user‑facing features across two releases in Agile sprints.</li>
+        </ul>
+      </article>
+
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="text-lg font-semibold">Wells Fargo — Technology Intern</h3>
+          <span class="text-sm text-slate-500">Jun 2022 – Aug 2022 · Charlotte, NC</span>
+        </div>
+        <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+          <li>Automated reporting for 1,000+ batch jobs; reduced incident resolution time by 25%.</li>
+          <li>Co‑designed schemas with data/product teams; improved analytics accuracy for reporting.</li>
+          <li>Validated pipelines with SQL to ensure clean, decision‑grade reporting.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-8 bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-950 shadow-soft">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Let’s build something great</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">I’m exploring PM-styled roles where I can blend user research, product strategy, and hands‑on execution.</p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a href="mailto:smaddala011@gmail.com" class="inline-flex items-center gap-2 rounded-xl bg-sky-600 text-white px-4 py-2 hover:bg-sky-700 shadow-soft">Email me</a>
+        <a href="https://github.com/smaddala011" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800">GitHub</a>
+        <a href="https://www.linkedin.com/in/sriharshamaddala/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="max-w-6xl mx-auto px-4 py-8 text-xs text-slate-500">
+    <div class="flex flex-wrap items-center justify-between gap-2">
+      <span>© <span id="year"></span> Sriharsha Maddala</span>
+      <span>Built with Tailwind · Dark‑mode ready</span>
+    </div>
+  </footer>
+
+  <script>
+    // Year + theme toggle with localStorage
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const themeBtn = document.getElementById('themeBtn');
+    const setTheme = (t) => { document.documentElement.classList.toggle('dark', t === 'dark'); localStorage.setItem('theme', t); };
+    // initialize
+    const saved = localStorage.getItem('theme');
+    if (saved) setTheme(saved); else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+    themeBtn?.addEventListener('click', () => {
+      const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+      setTheme(next);
+    });
+  </script>
+</body>
+</html>
